@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 USERNAME = "Admin"
 PASSWORD = "admin123"
-PAUSE = 8
+PAUSE = 5
 
 # Initialize WebDriver
 driver = webdriver.Chrome()
@@ -55,23 +55,43 @@ Enter_JobTitle = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="a
 Enter_JobTitle.click()
 time.sleep(PAUSE)
 
+# View Job
+Enter_Job = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/span')))
+Enter_Job.click()
+time.sleep(PAUSE)
+
 # Select Pay Grades from the job drop-down menu.
-Enter_PayGrades = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[2]')))
+Enter_PayGrades = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[2]')))
 Enter_PayGrades.click()
 time.sleep(PAUSE)
 
+# View Job
+Enter_Job = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/span')))
+Enter_Job.click()
+time.sleep(PAUSE)
+
 # Select Employment Status from the Job drop-down menu
-Enter_EmploymentStatus = wait.until(EC.element_to_be_clickable((By.XPATH, 'Enter_EmploymentStatus = wait.until(EC.element_to_be_clickable((By.XPATH,')))
+Enter_EmploymentStatus = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[3]/a')))
 Enter_EmploymentStatus.click()
 time.sleep(PAUSE)
 
+# View Job
+Enter_Job = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/span')))
+Enter_Job.click()
+time.sleep(PAUSE)
+
 # Select Job Categories from the Job drop-down menu
-Enter_JobCategories = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[4]')))
+Enter_JobCategories = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[4]')))
 Enter_JobCategories.click()
 time.sleep(PAUSE)
 
+# View Job
+Enter_Job = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/span')))
+Enter_Job.click()
+time.sleep(PAUSE)
+
 # Select Work Shifts from the Job drop-down menu
-Enter_WorkShifts = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[5]')))
+Enter_WorkShifts = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[4]')))
 Enter_WorkShifts.click()
 time.sleep(PAUSE)
 
@@ -85,9 +105,19 @@ Enter_GeneralInformation = wait.until(EC.presence_of_element_located((By.XPATH,'
 Enter_GeneralInformation.click()
 time.sleep(PAUSE)
 
+# View Organisation
+Enter_Organisation = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[3]/span')))
+Enter_Organisation.click()
+time.sleep(PAUSE)
+
 # Select Location from the Organisation drop-down menu
 Enter_Location = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[3]/ul/li[2]')))
 Enter_Location.click()
+time.sleep(PAUSE)
+
+# View Organisation
+Enter_Organisation = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[3]/span')))
+Enter_Organisation.click()
 time.sleep(PAUSE)
 
 # Select Structure from the Organisation drop-down menu
@@ -105,9 +135,19 @@ Enter_Skills = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app
 Enter_Skills.click()
 time.sleep(PAUSE)
 
+# View Qualification
+Enter_Qualification = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/span')))
+Enter_Qualification.click()
+time.sleep(PAUSE)
+
 # Select Education from the Qualification drop-down menu
 Enter_Education = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/ul/li[2]')))
 Enter_Education.click()
+time.sleep(PAUSE)
+
+# View Qualification
+Enter_Qualification = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/span')))
+Enter_Qualification.click()
 time.sleep(PAUSE)
 
 # Select License from the Qualification drop-down menu
@@ -115,9 +155,19 @@ Enter_Licenses = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="a
 Enter_Licenses.click()
 time.sleep(PAUSE)
 
+# View Qualification
+Enter_Qualification = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/span')))
+Enter_Qualification.click()
+time.sleep(PAUSE)
+
 # Select Languages from the Qualification drop-down menu
 Enter_Languages = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/ul/li[4]')))
 Enter_Languages.click()
+time.sleep(PAUSE)
+
+# View Qualification
+Enter_Qualification = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[4]/span')))
+Enter_Qualification.click()
 time.sleep(PAUSE)
 
 # Select Memberships from the Qualification drop-down menu
@@ -135,97 +185,114 @@ Enter_Add = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/
 Enter_Add.click()
 time.sleep(PAUSE)
 
-# Click on Records Found from Nationalities Page
-Enter_RecordsFound = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div[3]')))
-Enter_RecordsFound.click()
+# View More
+Enter_More = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > span')))
+Enter_More.click()
 time.sleep(PAUSE)
 
-# Click on More Drop-down
+# Click on Corporate Branding from More Drop-down menu
+Enter_CorporateBranding = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[1]/li')))
+Enter_CorporateBranding.click()
+time.sleep(PAUSE)
+
+# Click on More
 Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
 Enter_More.click()
 time.sleep(PAUSE)
 
-# Click Corporate Branding
-Enter_CorporateBranding = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[1]/li')))
-Enter_CorporateBranding.click()
-time.sleep(PAUSE)
-
-# Click Primary Color from Corporate Branding page
-Enter_PrimaryColour = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]')))
-Enter_PrimaryColour.click()
-time.sleep(PAUSE)
-
-# Click Secondary Color from Corporate Branding page
-Enter_SecondaryColor = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]')))
-Enter_SecondaryColor.click()
-time.sleep(PAUSE)
-
-# Click Primary Front Color from Corporate Branding page
-Enter_PrimaryFrontColor = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]')))
-Enter_PrimaryFrontColor.click()
-time.sleep(PAUSE)
-
-# Click on Secondary Front Color from Corporate Branding page
-Enter_SecondaryFrontColor = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]')))
-Enter_SecondaryFrontColor.click()
-time.sleep(PAUSE)
-
-# Click on Primary Gradient Color 1 from Corporate Branding page
-Enter_PrimaryGradientColor1 = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[5]')))
-Enter_PrimaryGradientColor1.click()
-time.sleep(PAUSE)
-
-# Click on Primary Gradient Color 2 from Corporate Branding page
-Enter_PrimaryGradientColor2 = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[6]')))
-Enter_PrimaryGradientColor2.click()
-time.sleep(PAUSE)
-
-# Click Configuration
+# Click Configuration from More
 Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/li/a')))
 Enter_Configuration.click()
 time.sleep(PAUSE)
 
-# Click Email Configuration from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Configuration from More
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
+# Click Email Configuration from Configuration Drop-Down Menu
 Enter_EmailConfiguration = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[1]')))
 Enter_EmailConfiguration.click()
 time.sleep(PAUSE)
 
-# Click Email Subscriptions from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Email Subscriptions from Configuration Drop-down Menu
 Enter_EmailSubscriptions = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[2]')))
 Enter_EmailSubscriptions.click()
 time.sleep(PAUSE)
 
-# Click localization from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click localization from Configuration drop-down Menu
 Enter_Localization = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[3]')))
 Enter_Localization.click()
 time.sleep(PAUSE)
 
-# Click Language Packages from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Language Packages from Configuration drop-down Menu
 Enter_LanguagesPackages = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[4]')))
 Enter_LanguagesPackages.click()
 time.sleep(PAUSE)
 
-# Click Modules from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Modules from Configuration drop-down Menu
 Enter_Modules = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[5]')))
 Enter_Modules.click()
 time.sleep(PAUSE)
 
-# Click Social Media Authentication from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Social Media Authentication from Configuration drop-down Menu
 Enter_SocialMediaAuthentication = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[6]')))
 Enter_SocialMediaAuthentication.click()
 time.sleep(PAUSE)
 
-# Click Register OAuth Client from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click Register OAuth Client from Configuration drop-down Menu
 Enter_RegisterOAuthClient = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[7]')))
 Enter_RegisterOAuthClient.click()
 time.sleep(PAUSE)
 
-# Click LDAP Configuration from Configuration dropdown Menu
+# Click on More
+Enter_More = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/span')))
+Enter_More.click()
+time.sleep(PAUSE)
+
+# Click LDAP Configuration from Configuration drop-down Menu
 Enter_LDAPConfiguration = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[8]')))
 Enter_LDAPConfiguration.click()
 time.sleep(PAUSE)
 
-# Pause for demonstration
+# Click on Logout
+Enter_Login = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a')))
+Enter_Login.click()
 time.sleep(PAUSE)
 
 # Close Browser
