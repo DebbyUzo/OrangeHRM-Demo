@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 USERNAME = "Admin"
 PASSWORD = "admin123"
-PAUSE = 5
+PAUSE = 15
 
 # Initialize WebDriver
 driver = webdriver.Chrome()
@@ -61,7 +61,7 @@ Enter_Job.click()
 time.sleep(PAUSE)
 
 # Select Pay Grades from the Job drop-down menu.
-Enter_PayGrades = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab.--parent > ul > li:nth-child(2)')))
+Enter_PayGrades = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[2]/a')))
 Enter_PayGrades.click()
 time.sleep(PAUSE)
 
@@ -186,38 +186,63 @@ Enter_Add.click()
 time.sleep(PAUSE)
 
 # Click on The Corporate Branding Button
-Enter_CorporateBranding = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(1) > li > a')))
+Enter_CorporateBranding = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[2]/div[2]/div/div/h6')))
 Enter_CorporateBranding.click()
 time.sleep(PAUSE)
 
 # Click on Configuration Menu
-Enter_Configuration = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(2) > li > a')))
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/a')))
 Enter_Configuration.click()
 time.sleep(PAUSE)
 
 # Click Email Configuration from Configuration Drop-Down Menu
-Enter_EmailConfiguration = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(2) > ul > li:nth-child(1)')))
+Enter_EmailConfiguration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[1]/a')))
 Enter_EmailConfiguration.click()
 time.sleep(PAUSE)
 
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
 # Click Email Subscriptions from Configuration Drop-down Menu
-Enter_EmailSubscriptions = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(2) > ul > li:nth-child(2)')))
+Enter_EmailSubscriptions = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[2]/a')))
 Enter_EmailSubscriptions.click()
 time.sleep(PAUSE)
 
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
 # Click localization from Configuration drop-down Menu
-Enter_Localization = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(2) > ul > li:nth-child(3)')))
+Enter_Localization = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[1]/a')))
 Enter_Localization.click()
 time.sleep(PAUSE)
 
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
 # Click Language Packages from Configuration drop-down Menu
-Enter_LanguagesPackages = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab > ul > div:nth-child(2) > ul > li:nth-child(4)')))
+Enter_LanguagesPackages = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab.--parent.--visited > ul > li:nth-child(4) > a')))
 Enter_LanguagesPackages.click()
 time.sleep(PAUSE)
 
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
 # Click Modules from Configuration drop-down Menu
-Enter_Modules = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[5]')))
+Enter_Modules = wait.until(EC.presence_of_element_located((By.XPATH, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-top bar-body > nav > ul > li.--active.oxd-top bar-body-nav-tab.--parent.--visited > ul > li:nth-child(5)')))
 Enter_Modules.click()
+time.sleep(PAUSE)
+
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
 time.sleep(PAUSE)
 
 # Click Social Media Authentication from Configuration drop-down Menu
@@ -225,9 +250,19 @@ Enter_SocialMediaAuthentication = wait.until(EC.presence_of_element_located((By.
 Enter_SocialMediaAuthentication.click()
 time.sleep(PAUSE)
 
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
+time.sleep(PAUSE)
+
 # Click Register OAuth Client from Configuration drop-down Menu
 Enter_RegisterOAuthClient = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[6]/ul/div[2]/ul/li[7]')))
 Enter_RegisterOAuthClient.click()
+time.sleep(PAUSE)
+
+# Click on Configuration Menu
+Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/div/li/a')))
+Enter_Configuration.click()
 time.sleep(PAUSE)
 
 # Click LDAP Configuration from Configuration drop-down Menu
