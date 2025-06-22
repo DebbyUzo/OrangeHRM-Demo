@@ -186,8 +186,8 @@ Enter_Add.click()
 time.sleep(PAUSE)
 
 # Click on The Corporate Branding Button
-Enter_CorporateBranding = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[2]/div[2]/div/div/h6')))
-Enter_CorporateBranding.click()
+Enter_Corporate_Branding = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[2]/div[2]/div/div/h6')))
+Enter_Corporate_Branding.click()
 time.sleep(PAUSE)
 
 # Click on Configuration Menu
@@ -195,9 +195,9 @@ Enter_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'//*[@
 Enter_Configuration.click()
 time.sleep(PAUSE)
 
-# Click Email Configuration from Configuration Drop-Down Menu
-Enter_EmailConfiguration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[1]/a')))
-Enter_EmailConfiguration.click()
+# Select Email Configuration from the Configuration drop-down Menu
+Enter_Email_Configuration = wait.until(EC.presence_of_element_located((By.XPATH,'/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[1]/a')))
+Enter_Email_Configuration.click()
 time.sleep(PAUSE)
 
 # Click on Configuration Menu
@@ -206,8 +206,8 @@ Enter_Configuration.click()
 time.sleep(PAUSE)
 
 # Click Email Subscriptions from Configuration Drop-down Menu
-Enter_EmailSubscriptions = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[7]/ul/li[2]/a')))
-Enter_EmailSubscriptions.click()
+Enter_Email_Subscriptions = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab.--parent.--visited > ul > li:nth-child(2) > a')))
+Enter_Email_Subscriptions.click()
 time.sleep(PAUSE)
 
 # Click on Configuration Menu
@@ -226,8 +226,8 @@ Enter_Configuration.click()
 time.sleep(PAUSE)
 
 # Click Language Packages from Configuration drop-down Menu
-Enter_LanguagesPackages = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab.--parent.--visited > ul > li:nth-child(4) > a')))
-Enter_LanguagesPackages.click()
+Enter_Languages_Packages = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div.oxd-layout.orangehrm-upgrade-layout > div.oxd-layout-navigation > header > div.oxd-topbar-body > nav > ul > li.--active.oxd-topbar-body-nav-tab.--parent.--visited > ul > li:nth-child(4) > a')))
+Enter_Languages_Packages.click()
 time.sleep(PAUSE)
 
 # Click on Configuration Menu
